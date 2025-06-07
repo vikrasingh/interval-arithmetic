@@ -28,11 +28,11 @@ For intervals $X=[x_{1},x_{2}]$ and $Y=[y_{1},y_{2}]$
 [x_{1},x_{2}].[y_{1},y_{2}]=[\min\{x_{1}y_{1},x_{1}y_{2},x_{2}y_{1},x_{2}y_{2}\},\max\{x_{1}y_{1},x_{1}y_{2},x_{2}y_{1},x_{2}y_{2}\}]
 ```
 #### Division
-For intervals $X=[x_{1},x_{2}]$ and $Y=[y_{1},y_{2}]$
+For intervals $X=[x_{1},x_{2}]$ and $Y=[y_{1},y_{2}]$ where $0 \notin[y_{1},y_{2}]$,
 ```math
-\frac{[x_{1},x_{2}]}{[y_{1},y_{2}]}=[x_{1},x_{2}].\frac{1}{[y_{1},y_{2}]},
+\frac{[x_{1},x_{2}]}{[y_{1},y_{2}]}=[x_{1},x_{2}].\frac{1}{[y_{1},y_{2}]}
 \text{ where } 
-\frac{1}{[y_{1},y_{2}]}=[1/y_{2},1/y_{1}] \text{ if } 0 \notin[y_{1},y_{2}]
+\frac{1}{[y_{1},y_{2}]}=[1/y_{2},1/y_{1}]
 ```
 ## Examples
 ### Example 1: Initialize an interval
