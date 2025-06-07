@@ -80,7 +80,7 @@ ans =
     [4.000000,6.000000]
 ```
 ### Example 3: Subtracting two intervals
-Operator '-' can be used to find the difference between two intervals
+Operator '-' is used to find the difference between two intervals
 ```matlab
 >> I-J
 
@@ -88,8 +88,8 @@ ans =
 
     [-3.000000,-1.000000]
 ```
-### Example: Dividing an interval by another
-Operator '/' can be used to divide an interval by another interval
+### Example 4: Dividing an interval by another
+Operator '/' is used to divide an interval by another interval
 ```matlab
 >> I/J
 
@@ -97,3 +97,28 @@ ans =
 
     [0.250000,0.666667]
 ```
+### Example 4: Natural Logarithm of an interval
+The keyword 'BiasLog' is used to find the natural log of an interval
+```matlab
+>> BiasLog(J)
+
+ans = 
+
+    [1.098613,1.386295]
+```
+### Example 5: Exponential of an interval
+The keyword 'BiasExp' is used to find the exponential of an interval
+```matlab
+>> BiasExp(J)
+
+ans = 
+
+    [20.085537,54.598151]
+```
+
+
+
+
+
+
+
