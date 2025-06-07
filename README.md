@@ -115,8 +115,20 @@ ans =
 
     [20.085537,54.598151]
 ```
+### Example 6: Trigonometric functions 
+The keywords 'BiasSin' and 'BiasCos' are used to evaluate the sine and cosine of an interval
+```matlab
+>> BiasSin(I)
 
+ans = 
 
+    [0.841470,1.000000] 
+>> BiasCos(I)
+
+ans = 
+
+    [-0.416147,0.540302]
+```
 
 
 
