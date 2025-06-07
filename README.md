@@ -35,3 +35,65 @@ For intervals $X=[x_{1},x_{2}]$ and $Y=[y_{1},y_{2}]$
 \frac{1}{[y_{1},y_{2}]}=[1/y_{2},1/y_{1}] \text{ if } 0 \notin[y_{1},y_{2}]
 ```
 ## Examples
+### Example 1: Initialize an interval
+The $INTERVAL$ keyword is used to represent a number as an interval. For instance
+```matlab
+>> I = INTERVAL(pi)
+I = 
+
+    [3.141593,3.141593] 
+```
+represents the constant $\pi$ as an interval $I$.
+```matlab
+>> fprintf('%1.15f \n',I.inf)
+3.141592653589792 
+>> fprintf('%1.15f \n',I.sup)
+3.141592653589794
+>>  I.inf<=pi && pi<=I.sup
+
+ans =
+
+  logical
+
+   1
+```
+We can also define an interval using the endpoints
+```matlab
+>> I=INTERVAL(1,2)
+
+I = 
+
+    [1.000000,2.000000] 
+```
+### Example 2: Adding two intervals
+Operator overloading allows us to use the '+' sign for adding two intervals
+```matlab
+>> J=INTERVAL(3,4)
+
+J = 
+
+    [3.000000,4.000000] 
+>> I+J
+
+ans = 
+
+    [4.000000,6.000000]
+```
+### Example 3: Subtracting two intervals
+Operator '-' can be used to find the difference between two intervals
+```matlab
+>> I-J
+
+ans = 
+
+    [-3.000000,-1.000000]
+```
+### Example: Dividing an interval by another
+Operator '/' can be used to divide an interval by another interval
+```matlab
+>> I/J
+
+ans = 
+
+    [0.250000,0.666667]
+```
